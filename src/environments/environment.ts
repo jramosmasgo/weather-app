@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiWeather: {
+    baseUrl: 'http://api.weatherapi.com/v1',
+    key: 'fe949882e0224d7fbac41431222406',
+  },
 };
 
 /*

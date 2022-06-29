@@ -1,0 +1,16 @@
+<header class="header">
+    <div class="header-content">
+        <div class="header-logo">
+            <h1>Weather App</h1>
+        </div>
+        <div class="header-search">
+            <input (keydown)="getResultsAutcomplete(inputAutocomplete.value)" #inputAutocomplete type="text"
+                class="input" placeholder="Ingrese el nombre del lugar a consultar" id="">
+            <div *ngIf="itemsAutocomplete.length > 1" class="header-search_autocomplete">
+                <ul>
+                    <li *ngFor="let item of itemsAutocomplete">{{item.name}},{{item.region}} - {{item.country}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
